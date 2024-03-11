@@ -11,6 +11,6 @@ def about(request: HttpRequest ):
     template2 = loader.get_template("about.html")
     return HttpResponse(template2.render())
     
-def home():
+def home(request):
     home_template = loader.get_template("home.html")
     return HttpResponse(home_template.render())
