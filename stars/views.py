@@ -14,9 +14,17 @@ def about(request: HttpRequest ):
     
 def home(request: HttpRequest):
     stars = StarDetails.objects.all().values()
-
     home_template = loader.get_template("home.html")
     context = {
         'stars': stars
     }
     return HttpResponse(home_template.render(context))
+
+def star_details(request):
+    star = StarDetails.objects.all().values()
+    template = loader.get_template('star_details.html')
+    context = {
+        'star': star,
+    }
+    return HttpResponse(template.render(context))
+
