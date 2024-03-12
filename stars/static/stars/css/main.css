@@ -6,5 +6,15 @@
 }
 
 .main-content {
-    background-color: ;
+    background-color: beige;
+    /*background-image: url("../images/centauri.jpg");
+    aspect-ratio: 3/4;
+    opacity: .3;
+    background-position: center / cover no-repeat fixed ;*/
+}
+
+.main-content p{
+    color:rgb(122, 245, 0);
+    font-size: 2rem;
+    background-color: blue;
 }
