@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
 from django.template import loader
+from .models import StarDetails
 
 # Create your views here.
 def star(request: HttpRequest ):
@@ -11,6 +12,11 @@ def about(request: HttpRequest ):
     template2 = loader.get_template("about.html")
     return HttpResponse(template2.render())
     
-def home(request):
+def home(request: HttpRequest):
+    stars = StarDetails.objects.all().values()
+
     home_template = loader.get_template("home.html")
-    return HttpResponse(home_template.render())
+    context = {
+        'stars': stars
+    }
+    return HttpResponse(home_template.render(context))

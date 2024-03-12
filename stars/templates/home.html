@@ -6,12 +6,51 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>UNIFIE MARTINS SPACE COMPANY</h1>
+    <div class="h1-container">
+        <h1>UNIFIE MARTINS SPACE COMPANY</h1>
+    </div>
+    <div class="nav-bar h1-container">
+        <p><a href = "about/" >Home</a></p>
+        <p>About</p>
+        <p>Contact Us</p> 
+    </div>
+
     <p> Explored stars include: </p>
     <ul>
-        
+        {% for star in stars %}
+           <li>{{ star.name }} {{ star.surface_temperature }}</li>
+        {% endfor %}
     </ul>
 
-    
+    <style>
+        h1{
+            color: rgb(124, 248, 0);
+
+        }
+        .h1-container{
+            background-color: blue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav-bar{
+            color: aliceblue;
+        }
+        .nav-bar a {
+            color: rgb(251, 166, 9);
+            font-size: 1.3rem;
+            text-decoration: none;
+            background-color: rgb(3, 135, 91);
+            padding: .4rem;
+        }
+        .nav-bar a:hover{
+            background-color: white;
+            color: rgb(205, 205, 24);
+            padding: .918rem;
+            border-radius: .3rem;
+        }
+        
+
+    </style>
 </body>
 </html>
