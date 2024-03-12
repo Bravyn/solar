@@ -1,5 +1,9 @@
 button {
-    padding: .4rem;
+    padding: .618rem;
     border: navy;
     background-color: yellow;
+}
+button:hover{
+    cursor: pointer;
+    border-radius: .3rem;
 }
