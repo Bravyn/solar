@@ -1,9 +1,19 @@
 button {
-    padding: .618rem;
-    border: navy;
-    background-color: yellow;
+    background-color: #04AA6D;/*green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
+
 button:hover{
+    border: #04AA6D;
     cursor: pointer;
     border-radius: .3rem;
+    background-color: rgb(174, 251, 31);
+    color: black;
+    
 }
