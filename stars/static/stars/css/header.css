@@ -1,4 +1,4 @@
-.header{
+.header {
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 20px 10px;
@@ -15,16 +15,22 @@
     border-radius: 4px;
 }
 
-.logo{
-    font-size: 25px;/*same as line height above to prevent header increase*/
-    font-weight: bold; 
+.logo {
+ /*same as line height above to prevent header increase*/
+    font-size: 25px;
+    font-weight: bold;
     letter-spacing: .3rem;
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+
+
 }
 
-.header a:hover{
+.header a:hover {
     background-color: #ddd;
     color: black;
 }
+
 .header a.active {
     background-color: dodgerblue;
     color: white;
@@ -42,6 +48,7 @@ the screen is 500px */
         display: block;
         text-align: left;
     }
+
     .header-right {
         float: none;
     }
